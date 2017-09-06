@@ -1,0 +1,332 @@
+/*
+  Theme Name: TUWYN
+  Theme Author: The Childress Agency
+  Theme Author URI: https://childressagency.com
+  Version: 1.0
+*/
+
+body{
+  font-family:"Open Sans", sans-serif;
+  color:#000;
+  font-weight:400;
+}
+
+h1{
+  margin-top:0;
+  margin-bottom:0;
+  font-weight:700;
+}
+
+.btn-main{
+  display:inline-block;
+  color:#000;
+  font-size:30px;
+  font-style:italic;
+  border:2px solid #19226d;
+  text-transform:uppercase;
+  padding:2px 25px;
+  -webkit-transition:all .3s ease;
+  transition:all .3s ease;
+}
+.btn-main.btn-alt{
+  color:#fff;
+  border-color:#ffd500;
+}
+.btn-main:hover,
+.btn-main:focus{
+  color:#19226d;
+  text-decoration:none;
+}
+.btn-main.btn-alt:hover,
+.btn-main.btn-alt:focus{
+  color:#ffd500;
+}
+
+#header-nav{
+  padding-top:15px;
+}
+.email-social{
+  float:right;
+}
+.email-social a{
+  color:#9a002b;
+}
+.email-social>a{
+  display:inline-block;
+  margin-right:5px;
+}
+.email-social .social{
+  display:inline-block;
+  border-left:1px solid #9a002b;
+}
+.email-social .social>a{
+  font-size:24px;
+  margin-left:10px;
+}
+
+.navbar-right{
+  margin-top:-20px;
+}
+.nav>li>a{
+  font-size:18px;
+  text-transform:uppercase;
+  font-weight:700;
+  color:#000;
+}
+.nav>li.active>a,
+.nav>li>a:hover,
+.nav>li>a:focus{
+  background-color:transparent;
+  color:#19226d;
+}
+
+.navbar-toggle{
+  border-color:#19226d;
+}
+.navbar-toggle .icon-bar{
+  background-color:#19226d;
+}
+
+.hp-hero{
+  background-image:url(images/dc-skyline-with-globe.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:right top;
+  min-height:700px;
+  position:relative;
+  border-top:10px solid #9a002b;
+  display:table;
+  width:100%;
+  padding:15px;
+}
+
+.globe-right{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(images/header-globe.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  top: 100px;  
+}
+.hp-hero .caption-wrapper{
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+.hp-hero .caption-wrapper>.caption{
+  max-width:600px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  padding:20px;
+  padding-bottom:60px;
+  border-left:20px solid #fff;
+  border-top:20px solid #fff;
+  border-right:20px solid #fff;
+  position:relative;
+  margin-bottom:-30px;
+}
+.hp-hero .caption-wrapper>.caption>h1{
+  color:#fff;
+  font-size:40px;
+  font-weight:700;
+  margin-top:0;
+  margin-bottom:0;
+}
+.hp-hero .caption-wrapper>.btn-main{
+  position:relative;
+  z-index:2;
+}
+.bottom-left-border{
+  position: absolute;
+  height: 20px;
+  width: 60px;
+  background-color: #fff;
+  left: 0;
+  bottom: 0;  
+}
+.bottom-right-border{
+  position:absolute;
+  height:20px;
+  width:60px;
+  background-color:#fff;
+  right:0;
+  bottom:0;
+}
+
+#whoWeAre{
+  padding-top:60px;
+  padding-bottom:40px;
+}
+#whoWeAre hr{
+  border-color:#9a002b;
+  border-width:4px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+#whoWeAre p{
+  font-size:18px;
+}
+ul.certifications{
+  text-align:center;
+}
+ul.certifications>li{
+  vertical-align:middle;
+}
+
+#hp-services{
+  background-image:url(images/server-racks.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center center;
+  padding-top:100px;
+  padding-bottom:80px;
+  font-size:36px;
+  font-weight:700;
+  color:#fff;
+  text-align:center;
+}
+#hp-services .btn-main{
+  margin-top:40px;
+}
+
+#hp-serviceCards{
+  padding-top:60px;
+  padding-bottom:60px;
+}
+#hp-serviceCards .row.hidden-xs>.col-sm-height{
+  text-align:center;
+  vertical-align:bottom;
+}
+#hp-serviceCards h1{
+  margin-bottom:20px;
+}
+.service-card{
+  text-align:center;
+}
+.service-card>p{
+  font-size:22px;
+  line-height:1.2em;
+  margin-top:20px;
+}
+.service-card>.btn-main{
+  margin-top:25px;
+}
+
+#coreValues{
+  background-color:#19226d;
+  padding-top:40px;
+  padding-bottom:40px;
+  border-top:10px solid #9a002b;
+  border-bottom:10px solid #9a002b;
+}
+#coreValues h1{
+  color:#fff;
+  text-align:center;
+}
+#coreValues .col-sm-7,
+#coreValues .col-sm-5{
+  margin-top:40px;
+}
+.eee{
+  margin-bottom:25px;
+}
+.eee>h2{
+  color:#fff;
+  margin-top:0;
+  margin-bottom:0;
+  font-size:38px;
+  color:#ffd500;
+  font-weight:700;
+  text-transform:uppercase;
+}
+.eee>span{
+  color:#fff;
+  font-weight:700;
+  font-size:22px;
+}
+#coreValues p{
+  font-size:22px;
+  font-weight:700;
+  text-align:center;
+  margin-top:40px;
+  color:#fff;
+}
+
+#whyUnique{
+  text-align:center;
+  padding-top:40px;
+  padding-bottom:40px;
+}
+#whyUnique p{
+  font-size:22px;
+  margin-top:40px;
+  margin-bottom:40px;
+}
+
+#connect.gradient{
+  background: rgba(25,33,109,1);
+  background: -moz-linear-gradient(top, rgba(25,33,109,1) 0%, rgba(25,38,66,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(25,33,109,1)), color-stop(100%, rgba(25,38,66,1)));
+  background: -webkit-linear-gradient(top, rgba(25,33,109,1) 0%, rgba(25,38,66,1) 100%);
+  background: -o-linear-gradient(top, rgba(25,33,109,1) 0%, rgba(25,38,66,1) 100%);
+  background: -ms-linear-gradient(top, rgba(25,33,109,1) 0%, rgba(25,38,66,1) 100%);
+  background: linear-gradient(to bottom, rgba(25,33,109,1) 0%, rgba(25,38,66,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19216d', endColorstr='#192642', GradientType=0 );  
+}
+#connect{
+  position:relative;
+  min-height:510px;
+}
+.left-globe{
+  position:absolute;
+  bottom:-115px;
+}
+
+
+@media (max-width:767px){
+  #header-nav{
+    padding-bottom:15px;
+  }
+  .header-logo>img{
+    float:left;
+    margin-left:15px;
+  }
+  .email-social{
+    float:none;
+    padding-top:25px;
+    padding-bottom:25px;
+  }
+  .hp-hero{
+    background-position:left top;
+  }
+  .hp-hero .caption-wrapper>.caption{
+    margin-bottom:30px;
+  }
+  .hp-hero .caption-wrapper>.caption>h1{
+    font-size:30px;
+  }
+  .hp-hero .caption-wrapper>.btn-main{
+    font-size:22px;
+  }
+  .service-card{
+    margin-top:40px;
+  }
+  #hp-services{
+    font-size:24px;
+  }
+}
+@media (min-width:768px){
+  .container-sm-height{
+    display:table;
+    width:100%;
+  }
+  .row-sm-height{
+    display:table-row;
+  }
+  .col-sm-height{
+    display:table-cell;
+    float:none;
+  }
+}
