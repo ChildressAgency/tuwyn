@@ -9,6 +9,7 @@ body{
   font-family:"Open Sans", sans-serif;
   color:#000;
   font-weight:400;
+  font-size:18px;
 }
 
 h1{
@@ -37,6 +38,7 @@ a:focus{
   padding:2px 25px;
   -webkit-transition:all .3s ease;
   transition:all .3s ease;
+  margin-top:40px;
 }
 .btn-main.btn-alt{
   color:#fff;
@@ -60,6 +62,7 @@ a:focus{
 }
 .email-social a{
   color:#9a002b;
+  font-size:14px;
 }
 .email-social>a{
   display:inline-block;
@@ -74,6 +77,11 @@ a:focus{
   margin-left:10px;
 }
 
+#header-nav{
+  border-bottom:10px solid #9a002b;
+  position:relative;
+  z-index:9999;
+}
 .navbar-right{
   margin-top:-20px;
 }
@@ -97,14 +105,14 @@ a:focus{
   background-color:#19226d;
 }
 
-.hp-hero{
-  background-image:url(images/dc-skyline.jpg);
+.hero{
   background-repeat:no-repeat;
   background-size:cover;
-  background-position:right top;
-  min-height:700px;
+  min-height:350px;
   position:relative;
-  border-top:10px solid #9a002b;
+}
+.hero.hp-hero{
+  min-height:700px;
   display:table;
   width:100%;
   padding:15px;
@@ -143,6 +151,7 @@ a:focus{
 .hp-hero .caption-wrapper>.btn-main{
   position:relative;
   z-index:2;
+  margin-top:0;
 }
 .bottom-left-border{
   position: absolute;
@@ -192,9 +201,6 @@ ul.certifications>li{
   font-weight:700;
   color:#fff;
   text-align:center;
-}
-#hp-services .btn-main{
-  margin-top:40px;
 }
 
 #hp-serviceCards{
@@ -270,6 +276,9 @@ ul.certifications>li{
   margin-top:40px;
   margin-bottom:40px;
 }
+#whyUnique .btn-main{
+  margin-top:0;
+}
 
 #connect.gradient{
   background: rgba(25,33,109,1);
@@ -340,8 +349,45 @@ footer .certifications>li>img{
 }
 .copyright>p{
   margin-bottom:0;
+  font-size:14px;
+}
+.footer-nav.navbar-right{
+  margin-top:0;
 }
 
+#main{
+  padding-top:40px;
+  padding-bottom:60px;
+  position:relative;
+}
+.page-title+hr{
+  margin-top:10px;
+  margin-bottom:10px;
+  border-color:#9a002b;
+  border-width:4px;
+}
+
+#missionVisionCallout{
+  background-repeat:no-repeat;
+  background-size:cover;
+  padding-top:60px;
+  padding-bottom:60px;
+  text-align:center;
+}
+#missionVisionCallout>.container{
+  max-width:800px;
+}
+#missionVisionCallout h1{
+  text-transform:uppercase;
+  margin-bottom:25px;
+  margin-top:25px;
+  color:#fff;
+}
+#missionVisionCallout p{
+  color:#fff;
+  font-weight:700;
+  margin-bottom:25px;
+}
 
 
 @media (max-width:767px){
@@ -366,7 +412,7 @@ footer .certifications>li>img{
   .hp-hero .caption-wrapper>.caption>h1{
     font-size:30px;
   }
-  .hp-hero .caption-wrapper>.btn-main{
+  .btn-main{
     font-size:22px;
   }
   .service-card{
@@ -377,6 +423,17 @@ footer .certifications>li>img{
   }
   .connect-box .social>a{
     padding:0px 15px;
+  }
+  .footer-logo>img{
+    margin-left:auto;
+    margin-right:auto;
+  }
+  footer .certifications{
+    margin-top:25px;
+  }
+  .footer-nav.navbar-right{
+    margin-top:25px;
+    text-align:center;
   }
 }
 @media (min-width:768px){
