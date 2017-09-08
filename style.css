@@ -568,6 +568,21 @@ http://wordpress.org/extend/plugins/wp-pagenavi/
   display:block;
 }
 
+.text-img-row .title-img{
+  margin-left:-15px;
+  margin-right:-15px;
+}
+.text-img-row .title-img>span{
+  background-repeat:no-repeat;
+  background-size:cover;
+  min-height:315px;
+  display:block;
+}
+.text-img-row article ul.multi-col{
+  padding-left:20px;
+  font-size:14px;
+}
+
 
 @media (max-width:767px){
   #header-nav{
@@ -636,5 +651,14 @@ http://wordpress.org/extend/plugins/wp-pagenavi/
   }
   footer .certifications>li>img{
     float:left;
+  }
+  .text-img-row>.container-fluid{
+    margin-left:0px;
+    margin-right:0px;
+    padding-left:0px;
+    padding-right:1px;
+  }
+  .text-img-row article ul.multi-col{
+    column-count:2;
   }
 }
