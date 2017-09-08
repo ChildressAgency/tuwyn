@@ -68,6 +68,20 @@ a:focus{
   color:#000;
 }
 
+.btn-submit{
+  width:100%;
+  background-color:#9a002b;
+  border:none;
+  color:#fff;
+  padding:5px 25px;
+  -webkit-transition:all .3s ease;
+  transition:all .3s ease;
+}
+.btn-submit:hover,
+.btn-submit:focus{
+  background-color:#19226d;
+}
+
 img.alignnone{
   display:block;
   max-width:100%;
@@ -536,6 +550,22 @@ http://wordpress.org/extend/plugins/wp-pagenavi/
 .post-header>h5{
   color:#999;
   margin-top:0;
+}
+
+.contact-form{
+  margin-top:40px;
+  max-width:450px;
+}
+.form-control{
+  border-color:#808080;
+  border-radius:0;
+}
+.contact-info{
+  margin-top:40px;
+}
+.contact-info>p>span{
+  font-weight:700;
+  display:block;
 }
 
 
