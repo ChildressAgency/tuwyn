@@ -54,6 +54,51 @@ a:focus{
   color:#ffd500;
 }
 
+.btn-back{
+  font-size:18px;
+  font-weight:400;
+  border-color:#999;
+  text-transform:none;
+  -webkit-transition:all .3s ease;
+  transition:all .3s ease;
+}
+.btn-back:hover,
+.btn-back:focus{
+  background-color:#999;
+  color:#000;
+}
+
+img.alignnone{
+  display:block;
+  max-width:100%;
+  height:auto;
+  margin-bottom:25px;
+}
+img.aligncenter{
+  display:block;
+  max-width:100%;
+  height:auto;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:25px;
+}
+img.alignleft{
+  display:block;
+  max-width:100%;
+  height:auto;
+  float:left;
+  margin-right:25px;
+  margin-bottom:25px;
+}
+img.alignright{
+  display:block;
+  max-width:100%;
+  height:auto;
+  float:right;
+  margin-left:25px;
+  margin-bottom:25px;
+}
+
 #header-nav{
   padding-top:15px;
 }
@@ -477,6 +522,20 @@ http://wordpress.org/extend/plugins/wp-pagenavi/
   float:left;
   color:#000;
   background-color:transparent;
+}
+
+.post-header{
+  margin-top:40px;
+  margin-bottom:40px;
+}
+.post-header>h1{
+  margin-bottom:0;
+  font-size:24px;
+  font-weight:400;
+}
+.post-header>h5{
+  color:#999;
+  margin-top:0;
 }
 
 
