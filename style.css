@@ -17,6 +17,16 @@ h1{
   font-weight:700;
 }
 
+a{
+  color:#19226d;
+  font-weight:700;
+}
+a:hover,
+a:focus{
+  color:#000;
+  text-decoration:underline;
+}
+
 .btn-main{
   display:inline-block;
   color:#000;
@@ -88,7 +98,7 @@ h1{
 }
 
 .hp-hero{
-  background-image:url(images/dc-skyline-with-globe.jpg);
+  background-image:url(images/dc-skyline.jpg);
   background-repeat:no-repeat;
   background-size:cover;
   background-position:right top;
@@ -100,14 +110,10 @@ h1{
   padding:15px;
 }
 
-.globe-right{
+.right-globe{
   position: absolute;
-  height: 100%;
-  width: 100%;
-  background-image: url(images/header-globe.png);
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  top: 100px;  
+  right:0;
+  bottom:-110px;
 }
 .hp-hero .caption-wrapper{
   display:table-cell;
@@ -278,11 +284,64 @@ ul.certifications>li{
 #connect{
   position:relative;
   min-height:510px;
+  text-align:center;
+  padding-top:60px;
+  padding-bottom:60px;
+  border-top:10px solid #9a002b;
 }
 .left-globe{
   position:absolute;
   bottom:-115px;
 }
+.connect-box{
+  padding:5px;
+  padding-bottom:30px;
+  border-left:20px solid #fff;
+  border-top:20px solid #fff;
+  border-right:20px solid #fff;
+  position:relative; 
+  margin-top:60px;
+  max-width:425px;
+  margin-left:auto;
+  margin-right:auto; 
+}
+.connect-box .social>a{
+  font-size:80px;
+  color:#fff;
+}
+.connect-box+span{
+  font-size:26px;
+  font-weight:700;
+  color:#fff;
+  text-transform:uppercase;
+}
+.contact-icon{
+  margin-top:60px;
+}
+.contact-icon h1{
+  margin-bottom:25px;
+}
+.contact-icon h1>a{
+  color:#fff;
+}
+
+footer{
+  border-top:10px solid #9a002b;
+  position:relative;
+  padding-top:40px;
+  padding-bottom:40px;
+}
+footer .certifications>li>img{
+  max-height:60px;
+}
+.copyright{
+  margin-top:40px;
+  text-align:center;
+}
+.copyright>p{
+  margin-bottom:0;
+}
+
 
 
 @media (max-width:767px){
@@ -316,6 +375,9 @@ ul.certifications>li{
   #hp-services{
     font-size:24px;
   }
+  .connect-box .social>a{
+    padding:0px 15px;
+  }
 }
 @media (min-width:768px){
   .container-sm-height{
@@ -328,5 +390,15 @@ ul.certifications>li{
   .col-sm-height{
     display:table-cell;
     float:none;
+    vertical-align:middle;
+  }
+  .connect-box{
+    margin-bottom:-30px;
+  }
+  .connect-box .social>a+a{
+    margin-left:40px;
+  }
+  footer .certifications>li>img{
+    float:left;
   }
 }
