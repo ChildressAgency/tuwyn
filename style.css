@@ -389,6 +389,96 @@ footer .certifications>li>img{
   margin-bottom:25px;
 }
 
+.sorting.dropdown{
+  float:right;
+}
+.btn-sort{
+  background-color:transparent;
+  border-style:solid;
+  border-color:#bfbfbf;
+}
+.btn-sort>.fa{
+  color:#bfbfbf;
+}
+.dropdown-toggle>.fa{
+  -webkit-transition:-ms-transform .3s ease;
+  -webkit-transition:-webkit-transform .3s ease;
+  -webkit-transition:transform .3s ease;
+  transition:-ms-transform .3s ease;
+  transition:-webkit-transform .3s ease;
+  transition:transform .3s ease;  
+}
+.open .dropdown-toggle .fa{
+  -ms-transform:rotate(180deg);
+  -webkit-transform:rotate(180deg);
+  transform:rotate(180deg);
+}
+
+
+.blog-summary{
+  margin-top:40px;
+  max-width:320px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.blog-summary>h3{
+  margin-bottom:0;
+}
+.blog-summary>h5{
+  margin-top:0;
+  color:#999;
+}
+
+/*
+Default style for WP-PageNavi plugin
+
+http://wordpress.org/extend/plugins/wp-pagenavi/
+*/
+
+.wp-pagenavi {
+  clear: both;
+}
+.wp-pagenavi a,
+.wp-pagenavi span {
+  text-decoration: none;
+  border: 1px solid #BFBFBF;
+  padding: 3px 5px;
+  margin: 2px;
+}
+.wp-pagenavi a:hover,
+.wp-pagenavi span.current {
+  border-color: #000;
+}
+.wp-pagenavi span.current {
+  font-weight: bold;
+}
+.wp-pagenavi{
+  text-align:right;
+  margin-top:60px;
+}
+.wp-pagenavi>span,
+.wp-pagenavi>a,
+.wp-pagenavi>span.current{
+  border:none;
+  background-color:#9a002b;
+  color:#fff;
+  font-weight:400;
+  padding:3px 10px;
+  display:inline-block;
+}
+.wp-pagenavi>span:hover,
+.wp-pagenavi>span:focus,
+.wp-pagenavi>a:hover,
+.wp-pagenavi>a:focus,
+.wp-pagenavi>span.current{
+  background-color:#19226d;
+}
+.wp-pagenavi>span.pages{
+  float:left;
+  color:#000;
+  background-color:transparent;
+}
+
 
 @media (max-width:767px){
   #header-nav{
