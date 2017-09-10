@@ -572,15 +572,57 @@ http://wordpress.org/extend/plugins/wp-pagenavi/
   margin-left:-15px;
   margin-right:-15px;
 }
+.text-img-row .title-img>h2{
+  color:#fff;
+  text-align:center;
+  background-color:#9a002b;
+  margin-top:0;
+  margin-bottom:0;
+  padding:10px 15px;
+  font-size:24px;
+}
 .text-img-row .title-img>span{
   background-repeat:no-repeat;
   background-size:cover;
   min-height:315px;
   display:block;
 }
-.text-img-row article ul.multi-col{
+.text-img-row article ul{
   padding-left:20px;
   font-size:14px;
+  margin-bottom:0;
+}
+.text-img-row article p{
+  line-height:1.2em;
+}
+
+#logistics{
+  margin-top:60px;
+}
+#logistics ul{
+  font-size:14px;
+  padding-left:20px;
+}
+#logistics article{
+  margin-top:40px;
+}
+.title-img-bottom{
+  margin-bottom:5px;
+}
+.title-img-bottom>span{
+  display: block;
+  min-height: 225px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.title-img-bottom>h2{
+  color:#fff;
+  font-size:24px;
+  background-color:#9a002b;
+  padding:10px 15px;
+  margin-top:0;
+  margin-bottom:0;
 }
 
 
@@ -629,6 +671,9 @@ http://wordpress.org/extend/plugins/wp-pagenavi/
     margin-top:25px;
     text-align:center;
   }
+  .text-img-row{
+    margin-top:40px;
+  }
 }
 @media (min-width:768px){
   .container-sm-height{
@@ -658,7 +703,17 @@ http://wordpress.org/extend/plugins/wp-pagenavi/
     padding-left:0px;
     padding-right:1px;
   }
-  .text-img-row article ul.multi-col{
+  .text-img-row article ul{
     column-count:2;
+    column-gap:40px;
+  }
+  #logistics ul{
+    column-count:2;
+    column-gap:40px;
+  }
+}
+@media (min-width:992px){
+  #logistics ul{
+    column-count:3;
   }
 }
