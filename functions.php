@@ -274,6 +274,11 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 	}
 }
 
+add_action('acf/init', 'tuwyn_acf_init');
+function tuwyn_acf_init(){
+	acf_update_setting('google_api_key', get_field('google_maps_api_key', 'option'));
+}
+
 if(function_exists('acf_add_options_page')){
   acf_add_options_page(array(
     'page_title' => 'General Settings',
