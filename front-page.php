@@ -40,27 +40,28 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-4">
+          <?php $card = get_field('card_sections'); ?>
           <div class="service-card">
             <h1 class="visible-xs-block">Corporate Construction</h1>
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/silhouette-workers.jpg" class="img-responsive center-block" alt="" />
-            <?php the_field('corporate_construction_card_text'); ?>
-            <a href="<?php the_field('corporate_construction_card_link'); ?>" class="btn-main">Learn More</a>
+            <?php echo $card['corporate_construction_card_text']; ?>
+            <a href="<?php echo $card['corporate_construction_card_link']; ?>" class="btn-main">Learn More</a>
           </div>
         </div>
         <div class="col-sm-4">
           <div class="service-card">
             <h1 class="visible-xs-block">VIM</h1>
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/wall-of-monitors.jpg" class="img-responsive center-block" alt="" />
-            <?php the_field('vim_card_text'); ?>
-            <a href="<?php the_field('vim_card_link'); ?>" class="btn-main">Learn More</a>
+            <?php echo $card['vim_card_text']; ?>
+            <a href="<?php echo $card['vim_card_link']; ?>" class="btn-main">Learn More</a>
           </div>
         </div>
         <div class="col-sm-4">
           <div class="service-card">
             <h1 class="visible-xs-block">Integrated Solutions</h1>
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/innovation-brain.jpg" class="img-responsive center-block" alt="" />
-            <?php the_field('integrated_solutions_card_text'); ?>
-            <a href="<?php the_field('integrated_solutions_card_link'); ?>" class="btn-main">Learn More</a>
+            <?php echo $card['integrated_solutions_card_text']; ?>
+            <a href="<?php echo $card['integrated_solutions_card_link']; ?>" class="btn-main">Learn More</a>
           </div>
         </div>
       </div>
@@ -94,7 +95,7 @@
   <section id="whyUnique">
     <div class="container">
       <h1>Why is TUWYN Unique?</h1>
-      <?php the_field('why_unique_statement'); ?>
+      <?php the_field('why_unique_statment'); ?>
       <a href="<?php echo home_url('our-process'); ?>" class="btn-main">Our Process</a>
     </div>
   </section>

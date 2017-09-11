@@ -30,7 +30,7 @@
         <article>
           <?php the_field('logistics_section_intro'); ?>
         </article>
-        <?php if(have_rows('logistics_services')): while(have_rows('logistics_services')): the_row(); ?>
+        <?php if(have_rows('logistic_services')): while(have_rows('logistic_services')): the_row(); ?>
           <article>
             <div class="title-img-bottom">
               <span style="background-image:url(<?php the_sub_field('logistics_service_image'); ?>);<?php the_sub_field('logistics_service_image_css'); ?>"></span>

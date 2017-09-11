@@ -73,8 +73,11 @@
       </div>
     </div>
   </nav>
-  <?php $hero_image = get_field('hero_image') ? get_field('hero_image') : get_stylesheet_directory_uri() . '/images/dc-skyline-2.jpg'; ?>
-  <section class="hero<?php if(is_front_page()){ echo ' hp-hero'; } ?>" style="background-image:url(<?php echo $hero_image; ?>); <?php the_field('hero_image_css'); ?>">
+  <?php 
+    $hero_image = get_field('hero_image') ? get_field('hero_image') : get_stylesheet_directory_uri() . '/images/dc-skyline-2.jpg'; 
+    $hero_image_css = get_field('hero_image_css') ? get_field('hero_image_css') : 'background-position:44% 100%;';
+  ?>
+  <section class="hero<?php if(is_front_page()){ echo ' hp-hero'; } ?>" style="background-image:url(<?php echo $hero_image; ?>); <?php echo $hero_image_css; ?>">
     <?php if(is_front_page()): ?>
       <div class="caption-wrapper">
         <div class="caption">

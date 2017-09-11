@@ -52,7 +52,7 @@ function tuwyn_scripts(){
   wp_enqueue_script('bootstrap-script');
   wp_enqueue_script('fontawesome');
 	wp_enqueue_script('google-maps');
-  //wp_enqueue_script('tuwyn-scripts');  
+  wp_enqueue_script('tuwyn-scripts');  
 }
 
 add_action('wp_enqueue_scripts', 'tuwyn_styles');
