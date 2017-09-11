@@ -568,6 +568,9 @@ http://wordpress.org/extend/plugins/wp-pagenavi/
   display:block;
 }
 
+.text-img-row>.container-fluid{
+  width:100%;
+}
 .text-img-row .title-img{
   margin-left:-15px;
   margin-right:-15px;
@@ -677,7 +680,6 @@ http://wordpress.org/extend/plugins/wp-pagenavi/
 @media (min-width:768px){
   .container-sm-height{
     display:table;
-    width:100%;
   }
   .row-sm-height{
     display:table-row;
