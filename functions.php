@@ -283,3 +283,14 @@ if(function_exists('acf_add_options_page')){
     'redirect' => false
   ));
 }
+
+function tuwyn_header_fallback_menu(){ ?>
+  <ul class="nav navbar-nav navbar-right">
+    <li<?php if(is_front_page()){ echo ' class="active"'; } ?>><a href="<?php echo home_url(); ?>">Home</a></li>
+    <li<?php if(is_page('about')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('about'); ?>">About Us</a></li>
+    <li<?php if(is_page('services')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('services'); ?>">Services</a></li>
+    <li<?php if(is_page('our-process')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('our-process'); ?>">Our Process</a></li>
+    <li<?php if(is_home()){ echo ' class="active"'; } ?>><a href="<?php echo home_url('blog'); ?>">Blog</a></li>
+    <li<?php if(is_page('contact')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('contact'); ?>">Contact</a></li>
+  </ul>
+<?php }
