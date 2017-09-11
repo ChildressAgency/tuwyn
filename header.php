@@ -11,17 +11,8 @@
   <meta http-equiv="cache-control" content="private">
 
   <title>TUWYN</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" media="all"
-  />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
-  <link rel="stylesheet" id="tuwyn-css" href="style.css" type="text/css" media="all" />
 
-  <script src="https://use.fontawesome.com/004c3c54fb.js"></script>
-
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <!--<script type="text/javascript" src="js/tuwyn-scripts.js"></script>-->
-
+  <?php wp_head(); ?>
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -36,7 +27,7 @@
   <![endif]-->
 </head>
 
-<body>
+<body <?php body_class(); ?>>
   <nav id="header-nav">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -82,14 +73,21 @@
       </div>
     </div>
   </nav>
-  <section class="hero hp-hero" style="background-image:url(images/dc-skyline.jpg); background-position:right top;">
-    <div class="caption-wrapper">
-      <div class="caption">
-        <h1>Tell Us What You Need<br />is a leader in managing visual information in the modern age.</h1>
-        <span class="bottom-left-border"></span>
-        <span class="bottom-right-border"></span>
+  <?php $hero_image = get_field('hero_image') ? get_field('hero_image') : get_stylesheet_directory_uri() . '/images/dc-skyline-2.jpg'; ?>
+  <section class="hero<?php if(is_front_page()){ echo ' hp-hero'; } ?>" style="background-image:url(<?php echo $hero_image; ?>); <?php the_field('hero_image_css'); ?>">
+    <?php if(is_front_page()): ?>
+      <div class="caption-wrapper">
+        <div class="caption">
+          <h1><?php the_field('hero_caption'); ?></h1>
+          <span class="bottom-left-border"></span>
+          <span class="bottom-right-border"></span>
+        </div>
+        <a href="<?php the_field('hero_caption_link'); ?>" class="btn-main btn-alt"><?php the_field('hero_caption_link_text'); ?></a>
       </div>
-      <a href="#" class="btn-main btn-alt">Learn More</a>
-    </div>
-    <div class="right-globe"><img src="images/right-globe.png" class="img-responsive" alt="" /></div>
+    <?php endif; ?>
+    <?php if(get_field('globe') == 'right-globe'): ?>
+      <div class="right-globe"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/right-globe.png" class="img-responsive" alt="" /></div>
+    <?php elseif(get_field('globe') == 'left-globe'): ?>
+      <div class="left-globe"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/left-globe.png" class="img-responsive" alt="" /></div>
+    <?php endif; ?>
   </section>

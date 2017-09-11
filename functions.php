@@ -294,3 +294,14 @@ function tuwyn_header_fallback_menu(){ ?>
     <li<?php if(is_page('contact')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('contact'); ?>">Contact</a></li>
   </ul>
 <?php }
+
+function tuwyn_footer_fallback_menu(){ ?>
+	<ul class="footer-nav nav navbar-nav navbar-right">
+		<li><a href="<?php echo home_url(); ?>">Home</a></li>
+		<li><a href="<?php echo home_url('about'); ?>">About Us</a></li>
+		<li><a href="<?php echo home_url('services'); ?>">Services</a></li>
+		<li><a href="<?php echo home_url('our-process'); ?>">Our Process</a></li>
+		<li><a href="<?php echo home_url('blog'); ?>">Blog</a></li>
+		<li><a href="<?php echo home_url('contact'); ?>">Contact</a></li>
+	</ul>
+<?php }

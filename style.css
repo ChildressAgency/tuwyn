@@ -266,6 +266,13 @@ ul.certifications>li{
   padding-top:60px;
   padding-bottom:60px;
 }
+#hp-serviceCards>.container-fluid{
+  width:100%;
+}
+#hp-serviceCards>.container-fluid.container-sm-height{
+  padding-left:0;
+  padding-right:0;
+}
 #hp-serviceCards .row.hidden-xs>.col-sm-height{
   text-align:center;
   vertical-align:bottom;
