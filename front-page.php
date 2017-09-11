@@ -20,7 +20,7 @@
   <section id="hp-services">
     <div class="container">
       <?php the_field('services_statement'); ?>
-      <a href="<?php the_field('services'); ?>" class="btn-main btn-alt">Our Services</a>
+      <a href="<?php echo home_url('services'); ?>" class="btn-main btn-alt">Our Services</a>
     </div>
   </section>
   <section id="hp-serviceCards">
