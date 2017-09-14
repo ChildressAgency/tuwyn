@@ -36,7 +36,7 @@
         <div class="col-sm-3 col-md-4">
           <ul class="certifications list-unstyled list-inline">
             <li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/sdvosb-logo.jpg" class="img-responsive center-block" alt="Service Disabled Veteran Owned Small Business Logo" /></li>
-            <li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/dbe-logo.jpg" class="img-responsive center-block" alt="Disadvantaged Business Enterprise Logo" /></li>
+            <!--<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/dbe-logo.jpg" class="img-responsive center-block" alt="Disadvantaged Business Enterprise Logo" /></li>-->
             <li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/swam-logo.jpg" class="img-responsive center-block" alt="Small, Women, and Minority Owned Certified Logo" /></li>
           </ul>
         </div>

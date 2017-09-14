@@ -10,7 +10,7 @@
         <div class="col-sm-6">
           <ul class="certifications list-unstyled list-inline">
             <li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/sdvosb-logo.jpg" class="img-responsive center-block" alt="Service Disabled Veteran Owned Small Business Logo" /></li>
-            <li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/dbe-logo.jpg" class="img-responsive center-block" alt="Disadvantaged Business Enterprise Logo" /></li>
+            <!--<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/dbe-logo.jpg" class="img-responsive center-block" alt="Disadvantaged Business Enterprise Logo" /></li>-->
             <li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/swam-logo.jpg" class="img-responsive center-block" alt="Small, Women, and Minority Certified Logo" /></li>
           </ul>
         </div>
@@ -27,30 +27,22 @@
     <div class="container-fluid container-sm-height">
       <div class="row row-sm-height hidden-xs">
         <div class="col-sm-4 col-sm-height">
-          <h1>Corporate Construction</h1>
+          <h1>Visual Information Management</h1>
         </div>
         <div class="col-sm-4 col-sm-height">
-          <h1>VIM</h1>
+          <h1>Integrated Logistics Solutions</h1>
         </div>
         <div class="col-sm-4 col-sm-height">
-          <h1>Integrated Solutions</h1>
+          <h1>Corporate Construction (Pending)</h1>
         </div>
       </div>
     </div>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-4">
           <?php $card = get_field('card_sections'); ?>
-          <div class="service-card">
-            <h1 class="visible-xs-block">Corporate Construction</h1>
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/silhouette-workers.jpg" class="img-responsive center-block" alt="" />
-            <?php echo $card['corporate_construction_card_text']; ?>
-            <a href="<?php echo $card['corporate_construction_card_link']; ?>" class="btn-main">Learn More</a>
-          </div>
-        </div>
         <div class="col-sm-4">
           <div class="service-card">
-            <h1 class="visible-xs-block">VIM</h1>
+            <h1 class="visible-xs-block">Visual Information Management</h1>
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/wall-of-monitors.jpg" class="img-responsive center-block" alt="" />
             <?php echo $card['vim_card_text']; ?>
             <a href="<?php echo $card['vim_card_link']; ?>" class="btn-main">Learn More</a>
@@ -58,10 +50,18 @@
         </div>
         <div class="col-sm-4">
           <div class="service-card">
-            <h1 class="visible-xs-block">Integrated Solutions</h1>
+            <h1 class="visible-xs-block">Integrated Logistics Solutions</h1>
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/innovation-brain.jpg" class="img-responsive center-block" alt="" />
             <?php echo $card['integrated_solutions_card_text']; ?>
             <a href="<?php echo $card['integrated_solutions_card_link']; ?>" class="btn-main">Learn More</a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="service-card">
+            <h1 class="visible-xs-block">Corporate Construction (Pending)</h1>
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/silhouette-workers.jpg" class="img-responsive center-block" alt="" />
+            <?php echo $card['corporate_construction_card_text']; ?>
+            <a href="<?php echo $card['corporate_construction_card_link']; ?>" class="btn-main">Learn More</a>
           </div>
         </div>
       </div>
